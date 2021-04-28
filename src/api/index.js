@@ -53,16 +53,16 @@ export const fetchCountries = async() => {
     }
 }
 
-export const fetchIndiaData = async() => {
+export const fetchUsaData = async() => {
     try{
-        const {data} = await axios.get(`${url}/countries/usa`);
-        const modifiedusaData = {
+        const {data} = await axios.get(`${url}/countries/Usa`);
+        const modifiedUsaData = {
             confirmed: data.confirmed,
             recovered: data.recovered,
             deaths: data.deaths,
             lastUpdate:data.lastUpdate
         }
-        return modifiedusaData;
+        return modifiedUsaData;
 
     }catch(error){
         console.log(error);
