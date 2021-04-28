@@ -5,7 +5,7 @@ import { Doughnut} from 'react-chartjs-2';
 import CountUp from 'react-countup';
 import './UnitedStates.css';
 import {fetchusaData} from '../../api';
-import india from '../../images/india.png';
+import medicaldoctor from '../../images/medicaldoctor.svg';
 
 const HeroSection = () => {
 
@@ -33,8 +33,8 @@ const HeroSection = () => {
 
     return(
         <div className="usa">
-          <h1 className="ind-heading"><img src={india} className="ind-img" alt="Indian flag" /><span style={{borderBottom:'2px solid '}}>UNITED STATES's REPORT</span></h1>
-          {indiaData.confirmed ? (
+          <h1 className="ind-heading"><img src={medicaldoctor} className="ind-img" alt="Indian flag" /><span style={{borderBottom:'2px solid '}}>UNITED STATES's REPORT</span></h1>
+          {usaData.confirmed ? (
           <Grid container className="ind-content" spacing={2}>
 
           <Grid item lg={6} md={6}>
