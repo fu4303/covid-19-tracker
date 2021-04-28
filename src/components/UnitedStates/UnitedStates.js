@@ -4,7 +4,7 @@ import {Card, Typography, Grid} from '@material-ui/core';
 import { Doughnut} from 'react-chartjs-2';
 import CountUp from 'react-countup';
 import './UnitedStates.css';
-import {fetchusaData} from '../../api';
+import {fetchUsaData} from '../../api';
 import medicaldoctor from '../../images/medicaldoctor.svg';
 
 const HeroSection = () => {
