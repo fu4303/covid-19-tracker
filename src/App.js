@@ -1,6 +1,6 @@
 import React from 'react';
 
-import India from './components/India/India';
+import India from './components/UnitedStates/UnitedStates';
 import Cards from './components/Cards/Cards';
 import Chart from './components/Chart/Chart';
 import CountryPicker from './components/CountryPicker/CountryPicker';
