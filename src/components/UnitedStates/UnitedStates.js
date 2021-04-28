@@ -32,8 +32,8 @@ const HeroSection = () => {
   
 
     return(
-        <div className="india">
-          <h1 className="ind-heading"><img src={india} className="ind-img" alt="Indian flag" /><span style={{borderBottom:'2px solid '}}>INDIA's REPORT</span></h1>
+        <div className="usa">
+          <h1 className="ind-heading"><img src={india} className="ind-img" alt="Indian flag" /><span style={{borderBottom:'2px solid '}}>UNITED STATES's REPORT</span></h1>
           {indiaData.confirmed ? (
           <Grid container className="ind-content" spacing={2}>
 
@@ -50,8 +50,8 @@ const HeroSection = () => {
                               >
                               </CountUp>
                                 </Typography>
-                            <Typography color="textSecondary" gutterBottom  ><Typography variant="h6" className="update">Updated:</Typography> {new Date(indiaData.lastUpdate).toDateString()}</Typography>
-                            <Typography color="textPrimary" className="bottom-line">Number of infected cases of COVID-19 in India</Typography>
+                            <Typography color="textSecondary" gutterBottom  ><Typography variant="h6" className="update">Updated:</Typography> {new Date(usaData.lastUpdate).toDateString()}</Typography>
+                            <Typography color="textPrimary" className="bottom-line">Number of infected cases of COVID-19 in United States</Typography>
             </Grid>
             <Grid className="g-card recovered" component={Card} item lg={6} spacing={3}>
             <Typography color="textSecondary" gutterBottom className="box-heading">Recovered</Typography>
@@ -64,8 +64,8 @@ const HeroSection = () => {
                               >
                               </CountUp>
                                 </Typography>
-                            <Typography color="textSecondary" gutterBottom><Typography variant="h6" className="update">Updated:</Typography> {new Date(indiaData.lastUpdate).toDateString()}</Typography>
-                            <Typography color="textPrimary" className="bottom-line">Number of recoveries from COVID-19 in India</Typography>
+                            <Typography color="textSecondary" gutterBottom><Typography variant="h6" className="update">Updated:</Typography> {new Date(usaData.lastUpdate).toDateString()}</Typography>
+                            <Typography color="textPrimary" className="bottom-line">Number of recoveries from COVID-19 in United States</Typography>
             </Grid>
             <Grid className="g-card deaths" component={Card} item lg={6} spacing={3}>
             <Typography color="textSecondary" gutterBottom className="box-heading">Deaths</Typography>
@@ -78,8 +78,8 @@ const HeroSection = () => {
                               >
                               </CountUp>
                                 </Typography>
-                            <Typography color="textSecondary" gutterBottom><Typography variant="h6" className="update">Updated:</Typography> {new Date(indiaData.lastUpdate).toDateString()}</Typography>
-                            <Typography color="textPrimary" className="bottom-line">Number of deaths due to COVID-19 in India</Typography>
+                            <Typography color="textSecondary" gutterBottom><Typography variant="h6" className="update">Updated:</Typography> {new Date(usaData.lastUpdate).toDateString()}</Typography>
+                            <Typography color="textPrimary" className="bottom-line">Number of deaths due to COVID-19 in United States</Typography>
             </Grid>
           </Grid>
           </Grid>
