@@ -33,9 +33,9 @@ const HeroSection = () => {
 
     return(
         <div className="usa">
-          <h1 className="ind-heading"><img src={medicaldoctor} className="ind-img" alt="Indian flag" /><span style={{borderBottom:'2px solid '}}>UNITED STATES's REPORT</span></h1>
+          <h1 className="us-heading"><img src={medicaldoctor} className="us-img" alt="Medical doctor" /><span style={{borderBottom:'2px solid '}}>UNITED STATES's REPORT</span></h1>
           {usaData.confirmed ? (
-          <Grid container className="ind-content" spacing={2}>
+          <Grid container className="us-content" spacing={2}>
 
           <Grid item lg={6} md={6}>
           <Grid className="stats" container spacing={3}>
