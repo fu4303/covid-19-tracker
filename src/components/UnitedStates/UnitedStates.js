@@ -4,26 +4,26 @@ import {Card, Typography, Grid} from '@material-ui/core';
 import { Doughnut} from 'react-chartjs-2';
 import CountUp from 'react-countup';
 import './UnitedStates.css';
-import {fetchUsData} from '../../api';
+import {fetchusaData} from '../../api';
 import india from '../../images/india.png';
 
 const HeroSection = () => {
 
-  const [usData, setUsData] = useState({});
+  const [usaData, setUsaData] = useState({});
 
   useEffect(() => {
-    const fetchedUsData = async() => {
-      const data = await fetchUsData();
-      setUsData(data);
+    const fetchedUsaData = async() => {
+      const data = await fetchUsaData();
+      setUsaData(data);
     }
     
-    fetchedUsData();
-  },[setUsData]);
+    fetchedUsaData();
+  },[setUsaData]);
 
-  const doughnutChart = ( usData.confirmed ? (<Doughnut data= {{
+  const doughnutChart = ( usaData.confirmed ? (<Doughnut data= {{
     labels:[ 'Infected', 'Recovered', 'Deaths'],
     datasets:[{
-      data: [usData.confirmed.value, usData.recovered.value, usData.deaths.value],
+      data: [usaData.confirmed.value, usaData.recovered.value, usaData.deaths.value],
       backgroundColor: ['rgba(20, 20, 255, 0.8)', 'rgba(20, 255, 20, 0.8)','rgba(255, 20, 20, 0.8)'],
       hoverBackgroundColor:['rgba(0, 0, 255, 1)', 'rgba(0, 255, 0, 1)', 'rgba(255, 0, 0, 1)']
     }]
@@ -44,7 +44,7 @@ const HeroSection = () => {
                             <Typography variant="h4">
                               <CountUp
                                 start={0}
-                                end={uSData.confirmed.value}
+                                end={usaData.confirmed.value}
                                 duration={2}
                                 separator=","
                               >
@@ -58,7 +58,7 @@ const HeroSection = () => {
                             <Typography variant="h4">
                             <CountUp
                                 start={0}
-                                end={uSData.recovered.value}
+                                end={usaData.recovered.value}
                                 duration={2}
                                 separator=","
                               >
@@ -72,7 +72,7 @@ const HeroSection = () => {
                             <Typography variant="h4">
                             <CountUp
                                 start={0}
-                                end={uSData.deaths.value}
+                                end={usaData.deaths.value}
                                 duration={2}
                                 separator=","
                               >
